@@ -107,7 +107,7 @@ function Home() {
           </p>
           <div className="mt-8 sm:mt-10">
             <a
-              href="#produtos"
+              href="https://wa.me/5511993591102"
               className="btn-green text-sm sm:text-base px-6 sm:px-8 py-3 sm:py-4 whitespace-pre-wrap text-center flex-col justify-center"
             >
               ENTRAR EM CONTATO
