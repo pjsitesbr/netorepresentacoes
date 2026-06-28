@@ -2,59 +2,59 @@ import { createFileRoute } from "@tanstack/react-router";
 import { useEffect, useState } from "react";
 import { SiteHeader } from "@/components/SiteHeader";
 import { SiteFooter } from "@/components/SiteFooter";
-import hipertextilLogoAsset from "@/assets/logos_png_bg.png.asset.json";
-import hipertextilCamaAsset from "@/assets/hipertextilCama.png.asset.json";
-import slide01Asset from "@/assets/slide01.jpg.asset.json";
-import slide02Asset from "@/assets/slide02.jpg.asset.json";
-import slide03Asset from "@/assets/slide03.jpg.asset.json";
-import slide04Asset from "@/assets/slide04.jpg.asset.json";
-const hipertextilSlides = [slide01Asset.url, slide02Asset.url, slide03Asset.url, slide04Asset.url];
+import hipertextilLogoAsset from "@/assets/logos_png_bg.png";
+import hipertextilCamaAsset from "@/assets/hipertextilCama.png";
+import slide01Asset from "@/assets/slide01.jpg";
+import slide02Asset from "@/assets/slide02.jpg";
+import slide03Asset from "@/assets/slide03.jpg";
+import slide04Asset from "@/assets/slide04.jpg";
+const hipertextilSlides = [slide01Asset, slide02Asset, slide03Asset, slide04Asset];
 import heroBg from "@/assets/hero-bedroom.jpg";
-import catCoposAsset from "@/assets/baldespascoa.png.asset.json";
-const catCopos = catCoposAsset.url;
-import catPalmeirasAsset from "@/assets/almofadassp.png.asset.json";
-import catPresentesAsset from "@/assets/MeuPet.png.asset.json";
-import catPersonalizadosAsset from "@/assets/galeria3.png.asset.json";
+import catCoposAsset from "@/assets/baldespascoa.png";
+const catCopos = catCoposAsset;
+import catPalmeirasAsset from "@/assets/almofadassp.png";
+import catPresentesAsset from "@/assets/MeuPet.png";
+import catPersonalizadosAsset from "@/assets/galeria32.png.asset.json";
 const catPalmeiras = catPalmeirasAsset.url;
 const catPresentes = catPresentesAsset.url;
 const catPersonalizados = catPersonalizadosAsset.url;
 import bannerPalmeiras from "@/assets/banner-futebol.jpg";
-import rischiotoLogoAsset from "@/assets/logo_01.png.asset.json";
-import galeria1Asset from "@/assets/galeria1.png.asset.json";
-import galeria2Asset from "@/assets/galeria2.png.asset.json";
-import galeria3Asset from "@/assets/galeria3-2.png.asset.json";
-import galeria4Asset from "@/assets/galeria4.png.asset.json";
-import banner01Asset from "@/assets/BANNER_01.png.asset.json";
-import banner02Asset from "@/assets/BANNER_02.png.asset.json";
-import banner03Asset from "@/assets/BANNER_03.png.asset.json";
-const brasfootBanners = [banner01Asset.url, banner02Asset.url, banner03Asset.url];
-import brasfootSlide01 from "@/assets/brasfoot-slide-01.png.asset.json";
-import brasfootSlide02 from "@/assets/brasfoot-slide-02.png.asset.json";
-import brasfootSlide03 from "@/assets/brasfoot-slide-03.png.asset.json";
-import brasfootSlide04 from "@/assets/brasfoot-slide-04.png.asset.json";
-import galCachaca from "@/assets/cachaca01.png.asset.json";
-import galCanecaGel from "@/assets/canecagel01.png.asset.json";
-import galCanecas01 from "@/assets/canecas01.png.asset.json";
-import galCanecas02 from "@/assets/canecas02.png.asset.json";
-import galCopoCanudo from "@/assets/copocanudo01.png.asset.json";
-import galCopoStone from "@/assets/copostone01.png.asset.json";
-import galGarrafa02 from "@/assets/garrafa02.png.asset.json";
-import galGarrafas01 from "@/assets/garrafas01.png.asset.json";
-import galPortaCopos from "@/assets/portacoposcorint.png.asset.json";
-import galCaipirinha from "@/assets/caipirinhapalsp.png.asset.json";
+import rischiotoLogoAsset from "@/assets/logo_01.png";
+import galeria1Asset from "@/assets/galeria1.png";
+import galeria2Asset from "@/assets/galeria2.png";
+import galeria3Asset from "@/assets/galeria3.png";
+import galeria4Asset from "@/assets/galeria4.png";
+import banner01Asset from "@/assets/BANNER_01.png";
+import banner02Asset from "@/assets/BANNER_02.png";
+import banner03Asset from "@/assets/BANNER_03.png";
+const brasfootBanners = [banner01Asset, banner02Asset, banner03Asset];
+import brasfootSlide01 from "@/assets/brasfoot-slide-01.png";
+import brasfootSlide02 from "@/assets/brasfoot-slide-02.png";
+import brasfootSlide03 from "@/assets/brasfoot-slide-03.png";
+import brasfootSlide04 from "@/assets/brasfoot-slide-04.png";
+import galCachaca from "@/assets/cachaca01.png";
+import galCanecaGel from "@/assets/canecagel01.png";
+import galCanecas01 from "@/assets/canecas01.png";
+import galCanecas02 from "@/assets/canecas02.png";
+import galCopoCanudo from "@/assets/copocanudo01.png";
+import galCopoStone from "@/assets/copostone01.png";
+import galGarrafa02 from "@/assets/garrafa02.png";
+import galGarrafas01 from "@/assets/garrafas01.png";
+import galPortaCopos from "@/assets/portacoposcorint.png";
+import galCaipirinha from "@/assets/caipirinhapalsp.png";
 const brasfootGallery = [
-  galCachaca.url,
-  galCanecaGel.url,
-  galCanecas01.url,
-  galCanecas02.url,
-  galCopoCanudo.url,
-  galCopoStone.url,
-  galGarrafa02.url,
-  galGarrafas01.url,
-  galPortaCopos.url,
-  galCaipirinha.url,
+  galCachaca,
+  galCanecaGel,
+  galCanecas01,
+  galCanecas02,
+  galCopoCanudo,
+  galCopoStone,
+  galGarrafa02,
+  galGarrafas01,
+  galPortaCopos,
+  galCaipirinha,
 ];
-const brasfootSlides = [brasfootSlide01.url, brasfootSlide02.url, brasfootSlide03.url, brasfootSlide04.url];
+const brasfootSlides = [brasfootSlide01, brasfootSlide02, brasfootSlide03, brasfootSlide04];
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -82,7 +82,7 @@ const categories = [
   },
 ];
 
-const rischiotoGallery = [galeria1Asset.url, galeria2Asset.url, galeria3Asset.url, galeria4Asset.url];
+const rischiotoGallery = [galeria1Asset, galeria2Asset, galeria3Asset, galeria4Asset];
 
 function Home() {
   return (
@@ -289,7 +289,7 @@ function Home() {
           {/* HIPERTEXTIL */}
           <div className="mb-20">
             <div className="bg-muted rounded-lg p-6 sm:p-12 grid md:grid-cols-2 gap-8 md:gap-12 items-center">
-              <img src={hipertextilLogoAsset.url} alt="HiperTêxtil" className="max-w-xs mx-auto" />
+              <img src={hipertextilLogoAsset} alt="HiperTêxtil" className="max-w-xs mx-auto" />
               <div>
                 <h3 className="text-3xl font-bold text-navy mb-4 tracking-tight">HiperTêxtil</h3>
                 <p className="text-navy/80 leading-relaxed mb-3">
@@ -316,7 +316,7 @@ function Home() {
 
             {/* Banner Cama */}
             <img
-              src={hipertextilCamaAsset.url}
+              src={hipertextilCamaAsset}
               alt="Linha de Cama Completa"
               className="w-full rounded-lg shadow mt-8"
             />
@@ -348,7 +348,7 @@ function Home() {
                   Confira nosso catálogo <span aria-hidden>→</span>
                 </a>
               </div>
-              <img src={rischiotoLogoAsset.url} alt="Rischioto" className="w-full rounded-lg shadow" />
+              <img src={rischiotoLogoAsset} alt="Rischioto" className="w-full rounded-lg shadow" />
             </div>
 
             <div className="mt-12 grid grid-cols-2 md:grid-cols-4 gap-4">
