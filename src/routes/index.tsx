@@ -14,7 +14,7 @@ import catCoposAsset from "@/assets/baldespascoa.png";
 const catCopos = catCoposAsset;
 import catPalmeirasAsset from "@/assets/almofadassp.png";
 import catPresentesAsset from "@/assets/MeuPet.png";
-import catPersonalizadosAsset from "@/assets/galeria32.png.asset.json";
+import catPersonalizadosAsset from "@/assets/galeria3.png.asset.json";
 const catPalmeiras = catPalmeirasAsset.url;
 const catPresentes = catPresentesAsset.url;
 const catPersonalizados = catPersonalizadosAsset.url;
